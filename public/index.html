@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Idea Sharing App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section id="home">
+            <h1>Welcome to the Idea Sharing Platform</h1>
+            <p>This platform allows you to share your innovative ideas and research projects with the world. Explore other people's ideas and contribute your own.</p>
+            <p>Get inspired and collaborate with like-minded individuals.</p>
+        </section>
+
+        <section id="submit">
+            <h2>Share Your Idea</h2>
+            <form id="ideaForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required><br>
+                <label for="description">Description:</label>
+                <textarea id="description" required></textarea><br>
+                <label for="contributor">Contributor (Optional):</label>
+                <input type="text" id="contributor"><br>
+                <label for="email">Email (Optional):</label>
+                <input type="email" id="email"><br>
+                <label for="tags">Tags (Optional):</label>
+                <input type="text" id="tags"><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="ideasWall">
+            <h2>Wall of Ideas</h2>
+            <div id="ideasWallContent"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
